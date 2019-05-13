@@ -9,9 +9,10 @@ async function bootstrap() {
 
   // swagger setting
   const options = new DocumentBuilder()
-    .setTitle('ptarmigan REST-API')
-    .setDescription('Lightning Network implementation ptarmigan REST-API')
-    .setVersion('0.1')
+    .setTitle('ptarmigan rest-api')
+    .setDescription('Lightning Network implimentation ptarmigan REST-API')
+    .setVersion('1.0')
+    .addTag('', '')
     .build();
   const document = SwaggerModule.createDocument(app, options);
   SwaggerModule.setup('api', app, document);
